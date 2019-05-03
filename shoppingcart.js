@@ -36,7 +36,7 @@ function removeItem(itemName) {
 function editItem(oldItem, newItem) {
     let index = shoppingCart.findIndex(element => element.name === oldItem);
     shoppingCart = [...shoppingCart.slice(0, index), { name: newItem, price: shoppingCart[index].price }, ...shoppingCart.slice(index + 1)]
-    console.log(`You've just edited you cart and exchanged ${oldItem} for ${newItem}.`);
+    console.log(`You've just edited your cart and exchanged ${oldItem} for ${newItem}.`);
 }
 
 function printTotal() {
